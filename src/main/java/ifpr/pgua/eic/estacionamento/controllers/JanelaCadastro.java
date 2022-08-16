@@ -2,6 +2,7 @@ package ifpr.pgua.eic.estacionamento.controllers;
 
 import ifpr.pgua.eic.estacionamento.App;
 import ifpr.pgua.eic.estacionamento.models.Estacionamento;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
@@ -35,7 +36,7 @@ public class JanelaCadastro {
 
 
     @FXML
-    private void cadastrar(){
+    private void cadastrar(ActionEvent event){
         String placa = tfPlaca.getText();
         String modelo = tfModelo.getText();
         String fabricante = tfFabricante.getText();
@@ -55,7 +56,7 @@ public class JanelaCadastro {
     }
 
     @FXML
-    private void cancelar(){
+    private void cancelar(ActionEvent event){
         App.popScreen();
     }
 
